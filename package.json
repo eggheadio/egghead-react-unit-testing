@@ -1,0 +1,14 @@
+{
+  "name": "egghead-react-unit-testing",
+  "version": "0.0.1",
+  "description": "Unit testing a React component using Jasmine and Webpack",
+  "author": "Simon Bailey <simon@newtriks.com>",
+  "dependencies": {
+    "react": "^0.13.1"
+  },
+  "devDependencies": {
+    "babel-core": "^5.1.9",
+    "babel-loader": "^5.0.0",
+    "webpack": "^1.8.4"
+  }
+}
