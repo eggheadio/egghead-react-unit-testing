@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Unit testing a React component using Jasmine and Webpack",
   "author": "Simon Bailey <simon@newtriks.com>",
+  "scripts": {
+    "test": "webpack-dev-server"
+  },
   "dependencies": {
     "react": "^0.13.1"
   },
