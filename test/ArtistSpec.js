@@ -1,5 +1,3 @@
-'use strict';
-
 import React from 'react/addons';
 import Artist from '../src/Artist';
 
