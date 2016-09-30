@@ -4,12 +4,12 @@
   "description": "Unit testing a React component using Jasmine and Webpack",
   "author": "Simon Bailey <simon@newtriks.com>",
   "dependencies": {
-    "react": "^15.3.2",
-    "react-addons-test-utils": "^15.3.2"
+    "react": "^15.3.2"
   },
   "devDependencies": {
     "babel-core": "^5.1.9",
     "babel-loader": "^5.0.0",
-    "webpack": "^1.8.4"
+    "webpack": "^1.8.4",
+    "react-addons-test-utils": "^15.3.2"
   }
 }
