@@ -1,16 +1,19 @@
-import React from 'react/addons';
+import React from 'react';
 import Artist from '../src/Artist';
 
-var TestUtils = React.addons.TestUtils;
+import ReactTestUtils from 'react-addons-test-utils';
 
 describe('Artist', () => {
-  var component;
+  var component, contents;
 
   beforeEach(() => {
-    component = TestUtils.renderIntoDocument(<Artist name="Run the Jewels" />);
+    // React Changed test utils in 0.14.x
+    // https://facebook.github.io/react/blog/2015/10/07/react-v0.14.html
+    component = ReactTestUtils.renderIntoDocument( <Artist name="Run the Jewels" /> );
+    contents = ReactTestUtils.scryRenderedDOMComponentsWithClass(component, 'artist')
   });
 
   it('should display the correct artist name', () => {
-    expect(component.getDOMNode().textContent).toMatch(/Artist name: Run the Jewels/);
+    expect(contents[0].textContent).toMatch(/Artist name: Run the Jewels/);
   });
 });

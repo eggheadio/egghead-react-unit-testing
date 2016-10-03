@@ -6,7 +6,7 @@ export default React.createClass({
 
   render() {
     return (
-        <span>Artist name: {this.props.name}</span>
+        <span className="artist">Artist name: {this.props.name}</span>
     );
   }
 
